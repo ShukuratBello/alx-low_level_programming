@@ -1,7 +1,7 @@
-#include <stdio.h>i
+#include <stdio.h>
 
-/*
- * main - Using Function sizeof
+/**
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
