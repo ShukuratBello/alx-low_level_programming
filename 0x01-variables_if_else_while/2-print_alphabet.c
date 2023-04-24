@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * main - Entry point
- * Description: Print alphabet in lowercase
- * Return - Always 0 (Success)
+ * Description: prints the alphabet in lowercase\n
+ * Return: Always 0 (success)
  */
 int main(void)
 {
