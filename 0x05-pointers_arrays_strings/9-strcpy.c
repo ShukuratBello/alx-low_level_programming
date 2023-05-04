@@ -13,9 +13,13 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	char *cont = dest;
+	int i = -1;
 
-	while (*src)
+	do{
+		i++;
+		char *cont = dest;
+	} while (*src)
 		*dest++ = *src++;
+
 	return (cont);
 }
