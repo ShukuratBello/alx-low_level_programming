@@ -1,4 +1,4 @@
-#include "main.h"
+0x07-pointers_arrays_strings#include "main.h"
 #include <stdio.h>
 
 /**
@@ -11,21 +11,19 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *startn = needle, *starth = haystack;
-
-	while (*haystack)
+	for (; *haystack != '\0'; haystack++)
 	{
-		starth = haystack;
-		needle = startn;
-		while (*haystack == *needle)
-		{
-			haystack++;
-			needle++;
-		}
+		char *l = haystack;
+		char *p = needle;
 
-		if (*needle == '\0')
+		while (*l == *p && *p != '\0')
+		{
+			l++;
+			p++;
+		}
+		if (*p == '\0')
 			return (haystack);
-		haystack = starth + 1;
 	}
-	return (NULL);
+
+	return (0);
 }
