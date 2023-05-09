@@ -1,4 +1,4 @@
-0x07-pointers_arrays_strings#include "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
