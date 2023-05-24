@@ -10,20 +10,20 @@
  * @cmp: a pointer to the function to be used to compare values
  * Return: return -1 if no element matches or when size is < 0
  */
-int int_index(int *array, int size, int (*cmp)(int));
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	int idx = 0;
+	int i = 0;
 
-	if (array == NULL || cmp == NULL)
+	if (cmp == NULL || array == NULL)
 		return (-1);
+
 	if (size <= 0)
 		return (-1);
 
-	for ( ; idx < size; idx++)
-	{
-		if (cmp(array[idx]) != 0)
-			return (idx);
-	}
+	for (; i < size; i++)
+		if (cmp(array[i]))
+			return (i);
+
 	if (i == size)
 		return (-1);
 
