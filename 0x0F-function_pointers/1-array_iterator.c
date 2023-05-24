@@ -10,13 +10,13 @@
  * @action: a pointer to the function needed
  * Return: Always(0)
  */
-void array_iterator(int *array, size_t size, void (*action)(int));
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned int i = 0;
 
-	if (array == NULL || action == NULL)
+	if (action == NULL || array == NULL)
 		return;
-	
+
 	for (; i < size; i++)
 		action(array[i]);
 }
