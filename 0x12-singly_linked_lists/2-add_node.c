@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stddef.h>
 #include "lists.h"
 
 /**
@@ -10,7 +9,7 @@
  * @str: string to put through
  * Return: returns an address of new node
  */
-list_t *add_node(list **head, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
 	int i = 0;
