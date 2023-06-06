@@ -4,7 +4,8 @@
 void start_func(void)__attribute__((constructor));
 
 /**
- * start_up_func - function that get's executed before the main function
+ * start_func - function that runs
+ * before the main function
  *
  * Return: void
  */
