@@ -6,6 +6,7 @@
  *
  * Return: no return.
  */
+size_t print_listint_safe(const listint_t *head)
 {
 	size_t nodes = 0;
 	const listint_t *one = head, *two = head;
