@@ -8,8 +8,8 @@
  */
 void free_listp2(listp_t **head)
 {
-	listp_t *temp;
-	listp_t *curr;
+	listint_t *temp;
+	listint_t *curr;
 
 	if (head != NULL)
 	{
@@ -32,7 +32,7 @@ void free_listp2(listp_t **head)
 size_t free_listint_safe(listint_t **h)
 {
 	size_t nnodes = 0;
-	listp_t *hptr, *new, *add;
+	listint_t *hptr, *new, *add;
 	listint_t *curr;
 
 	hptr = NULL;
