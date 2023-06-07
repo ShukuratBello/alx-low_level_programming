@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listp2 - f function that frees a linked list
+ * free_listint_safe - f function that frees a linked list
  * @h- A pointer
  * Return: The list of the list that was free
  */
