@@ -3,7 +3,7 @@
 /**
  * free_listint - a function that frees the list
  * @head: head of struct
- * Return: Nothing
+ *
  */
 void free_listint(listint_t *head)
 {
