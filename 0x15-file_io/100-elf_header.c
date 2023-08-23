@@ -112,19 +112,7 @@ void print_data(unsigned char *e_ident)
 }
 
 
- print_osabi(unsigned char *e_ident)
-{
-		printf("  OS/ABI:                            ");
-
-			switch (e_ident[EI_OSABI])
-					{
-							case ELFOSABI_NONE:
-										printf("UNIX - System V\n");
-												break;
-													case ELFOSABI_HPUX:
-														printf("UNIX - HP-UX\n");
-																break;
-																	case ELFOSABI_N/**
+/**
  * print_version - Prints the version of an ELF header.
  * @e_ident: A pointer to an array containing the ELF version.
  */
